@@ -97,7 +97,7 @@ Access seven report types — performance insights with 100+ metrics, sponsored 
 
 ## Supported Clients
 
-*Note: You will need to set up a data flow in Coupler.io with Facebook ads as a source and the AI tool of your choice as the destination.*
+*Note: You will need to set up a data flow in Coupler.io with Facebook (Meta) Ads as a source and the AI tool of your choice as the destination.*
 
 ### Claude
 
