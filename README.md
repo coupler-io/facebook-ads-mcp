@@ -6,7 +6,7 @@
 [![Transport](https://img.shields.io/badge/Transport-Streamable_HTTP-blue.svg)](#)
 [![Auth](https://img.shields.io/badge/Auth-OAuth_2.0-green.svg)](#)
 
-Coupler.io Facebook (Meta) Ads MCP server for Claude, ChatGPT, Gemini, Cursor, n8n, OpenClaw, and other MCP clients. Query and analyze Facebook (Meta) Ads data with natural language.
+Coupler.io Facebook (Meta) Ads MCP server for Claude, ChatGPT, Gemini, Cursor, n8n, OpenClaw, and other MCP clients. Query and analyze Facebook (Meta) Ads data with natural language. Requires the Coupler.io account.
 
 </div>
 
@@ -97,52 +97,43 @@ Access seven report types — performance insights with 100+ metrics, sponsored 
 
 ## Supported Clients
 
+*Note: You will need to set up a data flow in Coupler.io with Facebook ads as a source and the AI tool of your choice as the destination.*
+
 ### Claude
 
 Use with Claude Web, Desktop, Chat, Cowork, or Claude Code.
 
-**Via Integrations UI:** Search for "Coupler.io Facebook (Meta) Ads" in **Settings → Integrations → MCP** and add it.
+**Via Web/Desktop:** Go to **Customize**->**Connectors**->**Connect your tools**, search for Coupler.io and add it.
 
 **Via Claude Code CLI:**
 
 ```bash
-claude mcp add coupler-io-facebook-ads --transport streamable-http https://mcp.coupler.io/mcp
+claude mcp add coupler-io --transport streamable-http https://mcp.coupler.io/mcp
 ```
 
 ### ChatGPT
 
-Install from the **ChatGPT Apps** directory — search for "Coupler.io Facebook (Meta) Ads".
+Install from the **ChatGPT Apps** directory — search for "Coupler.io" in the **Apps** section of **Settings**.
 
 ### Cursor
 
-Find it on the [Cursor Directory](<!-- TODO: Add Cursor Directory URL -->) or add manually in **Cursor Settings → MCP → Add new MCP server**:
-
-- **Transport:** Streamable HTTP
-- **URL:** `https://mcp.coupler.io/mcp`
-
-### Perplexity
-
-Go to **Settings → MCP Servers → Add Server** and enter:
-
-- **Name:** Coupler.io Facebook (Meta) Ads
-- **URL:** `https://mcp.coupler.io/mcp`
+Find it on the [Cursor Directory](https://cursor.directory/mcp/coupler-io-official-remote-mcp).
 
 ### Gemini CLI
 
+Go to the **AI integrations** -> **Gemini CLI** page in your Coupler.io account to copy the correct command (unique to each account). It will look like this:
+
 ```bash
-gemini mcp add coupler-io-facebook-ads --transport streamable-http https://mcp.coupler.io/mcp
+gemini mcp add coupler --transport=http https://mcp.coupler.io/mcp/xxxxx
 ```
 
 ### OpenClaw
 
-Use the **mcporter** skill to connect, or install the **Coupler.io** skill from ClawHub:
-
-```
-/mcporter add coupler-io-facebook-ads --url https://mcp.coupler.io/mcp
-```
+Use the **mcporter** skill to connect, or install the **coupler-io** skill from ClawHub.
+Directly ask your OpenClaw agent to add the skill and execute it.
 
 ## Links
 
-- **Landing page:** <!-- TODO: Add landing page URL -->
+- **Landing page:** [Facebook Ads MCP by Coupler.io](https://www.coupler.io/mcp/facebook-ads)
 - **Coupler.io:** [https://coupler.io](https://coupler.io)
 - **MCP Server endpoint:** `https://mcp.coupler.io/mcp`
